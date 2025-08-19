@@ -38,10 +38,8 @@ API REST desarrollada con **Spring Boot** que simula el funcionamiento del foro 
 http://localhost:8081
 
 
----
 
 ## 🔐 Autenticación
-
 Antes de consumir los endpoints debes iniciar sesión:
 
 **POST /login**
@@ -52,16 +50,4 @@ Antes de consumir los endpoints debes iniciar sesión:
 "password": "admin123"
 }
 
-👉 Te devuelve un token JWT.
 
-Luego envíalo en cada petición como header:
-
-Authorization: Bearer <token>
-
-| Método | Ruta          | Descripción     |
-| ------ | ------------- | --------------- |
-| POST   | /topicos      | Crear un tópico |
-| GET    | /topicos      | Listar todos    |
-| GET    | /topicos/{id} | Buscar por ID   |
-| PUT    | /topicos/{id} | Actualizar      |
-| DELETE | /topicos/{id} | Eliminar        |
